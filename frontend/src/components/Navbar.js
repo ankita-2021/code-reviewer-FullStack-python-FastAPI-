@@ -1,5 +1,5 @@
 function Navbar() {
-  // ✅ LOGOUT FUNCTION (yahan likhna hai)
+  // LOGOUT FUNCTION 
   const handleLogout = () => {
     localStorage.removeItem("token");
     window.location.href = "/login";
@@ -24,7 +24,7 @@ function Navbar() {
 
         <a href="#">DSA Sheet</a>
 
-        {/* 🔥 LOGOUT BUTTON */}
+        {/* LOGOUT BUTTON */}
         <button
           onClick={handleLogout}
           className="bg-red-500 px-3 py-1 rounded hover:bg-red-600 ml-4"
