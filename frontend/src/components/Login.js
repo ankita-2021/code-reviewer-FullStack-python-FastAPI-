@@ -7,7 +7,7 @@ function Login() {
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
 
-  // 🔐 already logged in user redirect
+  // already logged in user redirect
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (token) {
@@ -17,7 +17,7 @@ function Login() {
 
   const handleLogin = async () => {
     if (!email || !password) {
-      alert("Email aur password daal pehle 😑");
+      alert("Email aur password daal pehle...");
       return;
     }
 
