@@ -26,33 +26,8 @@ function CodeReview() {
     setResult(null);
   };
 
-  // // 🚀 REVIEW
-  // const handleSubmit = async () => {
-  //   const token = localStorage.getItem("token");
 
-  //   if (!code) {
-  //     alert("Code daal pehle 😑");
-  //     return;
-  //   }
-
-  //   try {
-  //     const res = await fetch("http://127.0.0.1:8000/review-code", {
-  //       method: "POST",
-  //       headers: {
-  //         "Content-Type": "application/json",
-  //         Authorization: `Bearer ${token}`,
-  //       },
-  //       body: JSON.stringify({ code, language }),
-  //     });
-
-  //     const data = await res.json();
-  //     setResult(data);
-  //   } catch (err) {
-  //     alert("Error aa gaya ❌");
-  //   }
-  // };
-
-  // 🚀 REVIEW
+  
   const handleSubmit = async () => {
     const token = localStorage.getItem("token");
 
@@ -67,10 +42,10 @@ function CodeReview() {
 
       const payload = {
         code: formattedCode,
-        language: language.toLowerCase(), // 🔥 IMPORTANT
+        language: language.toLowerCase(), 
       };
 
-      console.log("SENDING TO BACKEND:", payload); // 👈 CHECK THIS
+      console.log("SENDING TO BACKEND:", payload); 
 
       const res = await fetch("http://127.0.0.1:8000/review-code", {
         method: "POST",
@@ -78,21 +53,21 @@ function CodeReview() {
           "Content-Type": "application/json",
           Authorization: `Bearer ${token}`,
         },
-        body: JSON.stringify(payload), // 🔥 FIXED
+        body: JSON.stringify(payload), 
       });
 
       const data = await res.json();
 
-      console.log("RESPONSE FROM BACKEND:", data); // 👈 CHECK THIS
+      console.log("RESPONSE FROM BACKEND:", data); 
 
       setResult(data);
     } catch (err) {
       console.error(err);
-      alert("Error aa gaya ❌");
+      alert("Error aa gaya...");
     }
   };
 
-  // 🚪 LOGOUT
+
   const handleLogout = () => {
     localStorage.removeItem("token");
     navigate("/");
