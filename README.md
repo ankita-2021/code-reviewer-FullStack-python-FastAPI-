@@ -2,30 +2,31 @@
 A full-stack web application that analyzes code and provides intelligent feedback, including pattern detection, time complexity, and optimization suggestions.
 
 📌 Features
-🔍 Detects common DSA patterns:
-Sorting
-HashMap
-Two Pointers
-Binary Search
-Recursion
-Nested Loops
-Stack / Queue / Set / Linked List
-⚡ Time & Space Complexity Analysis
-❗ Detects potential mistakes in code
-💡 Suggests optimizations
-📚 Provides DSA-based suggestions & interview questions
-🔐 JWT-based Authentication (Login/Signup)
-🧾 Code Review History (if implemented)
+### 🔍 Detects common DSA patterns:
+### Sorting
+### HashMap
+### Two Pointers
+### Binary Search
+### Recursion
+### Nested Loops
+### Stack / Queue / Set / Linked List
+
+### ⚡ Time & Space Complexity Analysis
+### ❗ Detects potential mistakes in code
+### 💡 Suggests optimizations
+### 📚 Provides DSA-based suggestions & interview questions
+### 🔐 JWT-based Authentication (Login/Signup)
+### 🧾 Code Review History (if implemented)
 
 🛠 Tech Stack
-Frontend
-React.js
-Tailwind CSS
-Fetch API
-Backend
-FastAPI
-Python
-JWT Authentication
+### Frontend
+### React.js
+### Tailwind CSS
+### Fetch API
+### Backend
+### FastAPI
+### Python
+### JWT Authentication
 
 🧠 How It Works
 This project uses a rule-based approach (no ML) to analyze code:
