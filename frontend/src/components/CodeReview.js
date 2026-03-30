@@ -9,7 +9,7 @@ function CodeReview() {
 
   const navigate = useNavigate();
 
-  // 🔐 check login + get user
+  // check login + get user
   useEffect(() => {
     const token = localStorage.getItem("token");
     if (!token) {
@@ -20,7 +20,7 @@ function CodeReview() {
     }
   }, []);
 
-  // 🔄 RESET (frontend only)
+  // RESET (frontend only)
   const handleReset = () => {
     setCode("");
     setResult(null);
@@ -32,12 +32,12 @@ function CodeReview() {
     const token = localStorage.getItem("token");
 
     if (!code) {
-      alert("Code daal pehle 😑");
+      alert("Code daal pehle ");
       return;
     }
 
     try {
-      // 🔥 DEBUG (check kya ja raha backend ko)
+      // DEBUG 
       const formattedCode = code.replace(/\r\n/g, "\n");
 
       const payload = {
